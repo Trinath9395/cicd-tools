@@ -5,7 +5,7 @@ data "aws_ami" "ami_info" {
 
     filter {
         name   = "name"
-        values = ["RHEL-9-DevOps-Practice"]
+        values = ["ami-02457590d33d576c3"]
     }
 
     filter {
