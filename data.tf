@@ -4,7 +4,7 @@ data "aws_ami" "ami_info" {
 
   filter {
     name   = "name"
-    values = ["al2023-ami-2023.*-x86_64"]
+    values = ["RHEL-9-DevOps-Practice"]
   }
 
   filter {
