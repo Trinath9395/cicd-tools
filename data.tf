@@ -1,20 +1,19 @@
 data "aws_ami" "ami_info" {
+  most_recent = true
+  owners      = ["658775564324"]
 
-    most_recent = true
-    owners = ["658775564324"]
+  filter {
+    name   = "name"
+    values = ["al2023-ami-2023.*-x86_64"]
+  }
 
-    filter {
-        name   = "image-id"
-        values = ["ami-02457590d33d576c3"]
-    }
+  filter {
+    name   = "root-device-type"
+    values = ["ebs"]
+  }
 
-    filter {
-        name   = "root-device-type"
-        values = ["ebs"]
-    }
-
-    filter {
-        name   = "virtualization-type"
-        values = ["hvm"]
-    }
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
 }

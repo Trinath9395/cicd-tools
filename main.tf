@@ -56,18 +56,16 @@ module "records" {
       name    = "jenkins"
       type    = "A"
       ttl     = 1
-      records = [
-        module.jenkins.public_ip
-      ]
+      records = [module.jenkins.public_ip]
+        
       allow_overwrite = true
     },
     {
       name    = "jenkins-agent"
       type    = "A"
       ttl     = 1
-      records = [
-        module.jenkins_agent.private_ip
-      ]
+      records = [module.jenkins_agent.private_ip]
+       
       allow_overwrite = true
     }
   ]
