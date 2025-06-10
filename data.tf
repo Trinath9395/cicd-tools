@@ -1,6 +1,6 @@
 data "aws_ami" "ami_info" {
   most_recent = true
-  owners      = ["137112412989"] # Amazon Linux official owner
+  owners      = ["973714476881"] # Amazon Linux official owner
 
   filter {
     name   = "name"
