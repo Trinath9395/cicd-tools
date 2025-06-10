@@ -1,10 +1,10 @@
 data "aws_ami" "ami_info" {
   most_recent = true
-  owners      = ["658775564324"]
+  owners      = ["137112412989"]
 
   filter {
-    name   = "name"
-    values = ["RHEL-9-DevOps-Practice"]
+    name   = "image-id"
+    values = ["al2023-ami-2023.7.20250527.1-kernel-6.1-x86_64"]
   }
 
   filter {
